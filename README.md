@@ -24,7 +24,7 @@ Welcome to the C++ introduction repository! This repository contains examples an
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/tales1982/CPP)
 Navigate to the repository directory:
 
 bash
