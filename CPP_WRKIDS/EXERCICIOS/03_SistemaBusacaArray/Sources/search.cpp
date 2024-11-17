@@ -6,7 +6,7 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 13:54:11 by tales             #+#    #+#             */
-/*   Updated: 2024/11/17 15:35:32 by tales            ###   ########.fr       */
+/*   Updated: 2024/11/17 15:51:13 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,3 +63,17 @@ void Decrescente::ordenaNumbre(int num[5])
     }
 }
 
+int Decrescente::RetornaIndex(int num[5], int n)
+{
+    int index;
+
+    index =0;
+    while(n != num[index])
+    {
+        index++;
+        
+    }
+
+    return (index);
+    
+}
