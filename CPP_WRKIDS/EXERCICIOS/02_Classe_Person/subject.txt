@@ -1,0 +1,42 @@
+Exercício Simples: Criando uma Classe Person
+Objetivo: Criar uma classe Person com um atributo privado, um construtor, um destrutor e um método que imprime uma mensagem personalizada. 
+Além disso, implemente duas funções auxiliares para criar objetos da classe.
+
+Requisitos:
+Crie uma classe Person:
+
+Um atributo privado std::string name.
+Um construtor que inicializa o nome da pessoa.
+Um destrutor que imprime uma mensagem dizendo que a pessoa foi destruída.
+Um método void greet() que imprime uma saudação no formato:
+
+*************************
+Olá, meu nome é <name>!
+*************************
+
+Crie duas funções fora da classe:
+
+Person* createPerson(std::string name):
+Cria um objeto Person no heap e retorna um ponteiro para ele.
+void introducePerson(std::string name):
+Cria um objeto Person na pilha e chama o método greet() para apresentar a pessoa.
+Escreva um programa no main.cpp para testar:
+
+Crie um objeto Person com createPerson.
+Certifique-se de liberar a memória manualmente com delete.
+Crie um objeto Person com introducePerson e observe o comportamento do destrutor.
+Use um Makefile para compilar o programa.
+
+Estrutura do Projeto:
+Arquivos necessários:
+Person.hpp: Cabeçalho da classe.
+Person.cpp: Implementação da classe.
+createPerson.cpp: Implementação da função createPerson.
+introducePerson.cpp: Implementação da função introducePerson.
+main.cpp: Arquivo principal para testes.
+Makefile: Arquivo de compilação.
+Passos para Resolver:
+Crie a classe Person com um atributo privado e métodos básicos.
+Implemente as funções auxiliares para criar objetos no heap e na pilha.
+Teste no main.cpp chamando as funções e observando o comportamento do destrutor.
+Compile e execute usando o Makefile.
