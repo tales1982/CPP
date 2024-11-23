@@ -6,7 +6,7 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 18:04:56 by tales             #+#    #+#             */
-/*   Updated: 2024/11/15 23:22:03 by tales            ###   ########.fr       */
+/*   Updated: 2024/11/17 12:41:07 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ int main()
             if (!clienteEncontrado)
             {
                 std::cout << "\033[31mNúmero da conta não encontrado.\033[0m" << std::endl;
-            }
+                }
         }
         else if (opcao == 4)
         {
