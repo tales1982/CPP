@@ -6,7 +6,7 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 21:38:40 by tales             #+#    #+#             */
-/*   Updated: 2024/11/22 22:19:17 by tales            ###   ########.fr       */
+/*   Updated: 2024/11/23 19:26:37 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ public:
     ~Person();
 
     // Método para exibir uma saudação
-    void greet() const;
+    void greet();
 };
 
 // Funções auxiliares

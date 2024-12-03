@@ -1,12 +1,15 @@
 #nome do executável
-TARGET = bank
+TARGET = Cadastro
 
 #Diretorios
 SRC_DIR = Sources
 HEADER_DIR = Header
 
 #Arquivos fonte
-SRCS = $(SRC_DIR)/main.cpp$(SRC_DIR)/CreatePerson.cpp$(SRC_DIR)/IntroducePerson.cpp$(SRC_DIR)/Person.cpp
+SRCS = $(SRC_DIR)/main.cpp \
+       $(SRC_DIR)/CreatePerson.cpp \
+       $(SRC_DIR)/IntroducePerson.cpp \
+       $(SRC_DIR)/Person.cpp
 
 #Compilador
 CXX = c++
