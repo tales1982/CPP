@@ -1,0 +1,56 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    subjct.txt                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tales <tales@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/12/06 16:50:27 by tales             #+#    #+#              #
+#    Updated: 2024/12/06 19:04:06 by tales            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Exercício: Sistema de Funcionários
+Você deve implementar um sistema básico que gerencie informações de funcionários. Para isso:
+
+Crie uma classe base chamada ***Employee***
+com os seguintes atributos e métodos:
+
+Atributos protegidos:
+std::string name: Nome do funcionário.
+int id: ID do funcionário.
+Construtor: Recebe o nome e o ID como parâmetros.
+Método público: virtual void displayInfo() const: Imprime o nome e o ID do funcionário.
+Destrutor virtual.
+Crie duas classes derivadas:
+
+***Manager***: Herda de Employee e adiciona:
+Atributo privado: int teamSize: Tamanho da equipe.
+Construtor: Recebe o nome, ID e tamanho da equipe.
+Sobrescreve displayInfo(): Exibe o nome, ID e tamanho da equipe.
+
+***Developer***: Herda de Employee e adiciona:
+Atributo privado: std::string programmingLanguage: Linguagem de programação.
+Construtor: Recebe o nome, ID e linguagem de programação.
+Sobrescreve displayInfo(): Exibe o nome, ID e linguagem de programação.
+Implemente um programa principal (main) que:
+
+Crie objetos das classes Manager e Developer.
+Utilize um vetor de ponteiros da classe base (Employee*) para armazenar e exibir informações dos objetos polimorficamente.
+Dicas e Restrições:
+Use herança pública para as classes derivadas.
+Implemente o destrutor virtual na classe base para evitar problemas de memória.
+Não utilize std::vector se ainda não conhece essa estrutura; você pode usar arrays.
+
+Exemplo de Saída Esperada:
+
+Copiar código
+Manager Info:
+Name: Alice
+ID: 1
+Team Size: 5
+
+Developer Info:
+Name: Bob
+ID: 2
+Programming Language: C++
