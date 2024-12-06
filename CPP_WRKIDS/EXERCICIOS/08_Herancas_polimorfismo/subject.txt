@@ -1,0 +1,86 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    subject.txt                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tales <tales@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/12/06 19:59:46 by tales             #+#    #+#              #
+#    Updated: 2024/12/06 22:18:30 by tales            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Exercício: RobotFighter
+Descrição do Exercício:
+Você deve implementar uma classe <**chamada RobotFighter**>, que representa robôs lutadores em um torneio. 
+Cada RobotFighter terá atributos privados para gerenciar o estado do robô e métodos públicos para 
+realizar ações de ataque, defender-se contra danos e se reparar.
+
+Requisitos:
+Atributos privados:
+
+std::string _name: O nome do robô (passado no construtor).
+int _health: Pontos de vida do robô (inicializado como 100).
+int _energy: Pontos de energia do robô (inicializado como 50).
+int _damage: Potência de ataque (inicializado como 10).
+Métodos públicos:
+
+*****************************************************************
+1°
+void attack(const std::string& target);
+Faz o robô atacar um alvo.
+Consome 5 pontos de energia por ataque.
+Exibe uma mensagem como:
+"RobotFighter <name> attacks <target>, dealing <damage> damage!".
+
+*****************************************************************
+2°
+void takeDamage(int amount);
+Reduz os pontos de vida do robô com base no dano recebido.
+Se os pontos de vida chegarem a 0 ou menos, exibe uma mensagem indicando que o robô foi destruído:
+"RobotFighter <name> has been destroyed!".
+
+*****************************************************************
+3°
+void repair(int amount);
+Faz o robô recuperar pontos de vida com base no valor recebido.
+Consome 10 pontos de energia por reparação.
+Exibe uma mensagem como:
+"RobotFighter <name> repairs itself, recovering <amount> health!".
+Todos os métodos devem verificar se há energia suficiente para realizar a ação e exibir mensagens apropriadas caso contrário.
+*******************************************************************
+4°
+Construtores e destrutor:
+O construtor recebe o nome do robô como parâmetro e inicializa os outros atributos com os valores padrão.
+O destrutor exibe uma mensagem como:
+"RobotFighter <name> has been decommissioned.".
+
+********************************************************************
+5°
+Testes no main:
+
+Crie pelo menos dois objetos da classe RobotFighter.
+Realize ataques, defesas e reparações usando os métodos implementados.
+Teste cenários de falta de energia e destruição.
+Detalhes de Implementação:
+Turn-in Directory:
+
+ex00/
+Arquivos a serem entregues:
+
+Makefile
+main.cpp
+RobotFighter.{h, hpp}
+RobotFighter.cpp
+Funções proibidas:
+
+Nenhuma.
+Exemplo de Saída Esperada:
+plaintext
+RobotFighter Alpha attacks Beta, dealing 10 damage!
+RobotFighter Beta takes 10 damage. Health is now 90.
+RobotFighter Alpha repairs itself, recovering 20 health!
+RobotFighter Alpha doesn't have enough energy to attack!
+RobotFighter Beta has been destroyed!
+RobotFighter Alpha has been decommissioned.
+RobotFighter Beta has been decommissioned.
