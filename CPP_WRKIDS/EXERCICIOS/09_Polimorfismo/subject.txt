@@ -1,0 +1,37 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    subject.txt                                        :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tales <tales@student.42.fr>                +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/12/08 10:58:29 by tales             #+#    #+#              #
+#    Updated: 2024/12/08 11:20:45 by tales            ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+Exercício de Polimorfismo
+Crie um programa que modele diferentes tipos de funcionários em uma empresa. 
+Use polimorfismo para calcular o salário de diferentes tipos de funcionários.
+
+Requisitos:
+1. Crie uma classe base chamada *Employee* com:
+    °Um método virtual calculateSalary() que retorna o salário.
+    °Um atributo comum, como name.
+
+2. Crie pelo menos duas classes derivadas:
+    °*SalariedEmployee:* Representa funcionários que recebem um salário fixo mensal.
+    °*HourlyEmployee:* Representa funcionários que recebem por hora trabalhada.
+
+3. Em cada classe derivada, implemente o método calculateSalary():
+    °SalariedEmployee retorna um salário fixo.
+    °HourlyEmployee calcula o salário com base nas horas trabalhadas e no valor por hora.
+
+4. Crie um programa que:
+    °Pergunte ao usuário quantos funcionários deseja adicionar.
+    °Permita adicionar tanto SalariedEmployee quanto HourlyEmployee.
+    °Exiba o salário de cada funcionário chamando calculateSalary() de maneira polimórfica.
+    
+Dicas:
+Use ponteiros ou referências para armazenar objetos de classe base e derivadas.
+Lembre-se de liberar a memória alocada, se necessário.
