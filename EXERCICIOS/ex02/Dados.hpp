@@ -18,8 +18,10 @@ public:
     void setAge(int age);
 
     //get
-    std::string getName() const;
+    const std::string getName() const;
     int getAge() const;
 };
+
+std::ostream& operator<<(std::ostream& saida, const Dados& x);
 
 #endif

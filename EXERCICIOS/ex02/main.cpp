@@ -28,7 +28,8 @@ int main()
         std::cin >> idade;
         dados.setAge(idade);
 
-        std::cout << dados.getName() << " tem "<< dados.getAge() << " anos de idade." << std::endl;
+        std::cout << dados << std::endl; // Aqui usa o operador << sobrecarregado
+        //std::cout << dados.getName() << " tem "<< dados.getAge() << " anos de idade." << std::endl;
     }
     catch(const std::exception& e)
     {
