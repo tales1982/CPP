@@ -6,25 +6,9 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 21:52:09 by tales             #+#    #+#             */
-/*   Updated: 2025/04/05 13:53:32 by tales            ###   ########.fr       */
+/*   Updated: 2025/04/07 19:09:28 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-💡 Descrição:
-Crie um programa chamado ContactManager que permite armazenar até 8 contatos com as seguintes informações:
-
-- Nome
-- Sobrenome
-- Número de telefone
-
-O programa deve oferecer um menu simples no terminal com as opções:
-
-1. Adicionar novo contato
-2. Listar todos os contatos
-3. Sair
-
-*/
 
 #include "Agenda.hpp"
 #include "utils.hpp"

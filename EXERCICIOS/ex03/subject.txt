@@ -1,0 +1,48 @@
+- Exercício Simplificado: Sistema de Login com Validação de Acesso
+Vou criar um exercício mais simples que aborda os mesmos conceitos principais (classes, atributos constantes, validação, exceções e interação entre objetos), mas em um contexto mais familiar: um sistema de login com níveis de acesso.
+
+Exercício: Sistema de Autenticação
+Crie um programa que simule um sistema de login com diferentes níveis de acesso.
+
+Parte 1: Classe User
+Implemente uma classe User com:
+
+const std::string username (nome de usuário constante)
+
+const int accessLevel (nível de acesso constante, 1-5, onde 1 é admin)
+
+bool isLoggedIn (status de login)
+
+Regras:
+
+Se accessLevel < 1 ou > 5, lance User::InvalidAccessLevelException
+
+Construtor deve inicializar todos os atributos
+
+Método login() que muda isLoggedIn para true
+
+Método logout() que muda isLoggedIn para false
+
+Parte 2: Classe LoginSystem
+Implemente uma classe LoginSystem com:
+
+Método authenticate(User& user, int requiredLevel)
+
+Verifica se user.accessLevel >= requiredLevel
+
+Se sim, chama user.login() e retorna true
+
+Se não, lança LoginSystem::AccessDeniedException
+
+Parte 3: Testes
+No main(), crie:
+
+Um usuário válido (accessLevel 3)
+
+Um usuário inválido (accessLevel 0) - deve lançar exceção
+
+Tente autenticar o usuário válido para acessar:
+
+Um recurso que requer nível 2 (deve ter sucesso)
+
+Um recurso que requer nível 4 (deve falhar)
