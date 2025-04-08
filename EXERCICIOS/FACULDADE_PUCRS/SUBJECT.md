@@ -3,13 +3,13 @@
 **Programação em C/C++**  
 
 ## Exercícios sobre CLASSES em C++  
-
-### 1. Classe Pessoa  
+#
+# 1. Classe Pessoa  
 Crie uma classe para representar uma pessoa, com os atributos privados de nome, idade e altura. Crie os métodos públicos necessários para `sets` e `gets` e também um método para imprimir os dados de uma pessoa.  
 
 ---  
-
-### 2. Classe Agenda  
+#
+# 2. Classe Agenda  
 Crie uma classe `Agenda` que armazena 10 pessoas e seja capaz de operações como:  
 
 ```cpp
@@ -49,7 +49,7 @@ int main() {
     return 0;
 }
 ```
-
+#
 # 3. Classe Elevador
 Crie uma classe Elevador para armazenar informações de um elevador dentro de um prédio.
 
@@ -76,7 +76,7 @@ Crie uma classe Elevador para armazenar informações de um elevador dentro de u
 - desce: Desce um andar (não desce se já estiver no térreo).
 
 - get...: Métodos para obter os dados armazenados.
-
+#
 # 4. Classe Relógio
 Crie uma classe Relogio para armazenar horário (hora, minuto, segundo).
 
@@ -87,30 +87,22 @@ Crie uma classe Relogio para armazenar horário (hora, minuto, segundo).
 - getHora: Retorna o horário atual (via referência).
 
 - avancarHorario: Avança o horário em 1 segundo (atualizando minutos/horas se necessário).
+#
+# 5. Definir uma classe que represente um círculo.
 
-# 5. Classe Círculo
-Defina uma classe Circulo com:
-
-### Métodos Privados:
-
-- Calcular área.
-
-- Calcular distância entre centros de 2 círculos.
-
-- Calcular circunferência.
-
-### Métodos Públicos:
-
-- Definir raio.
-
-- Aumentar raio (por percentual).
-
-- Definir centro (X, Y).
-
-- Imprimir raio, centro e área.
-
-*** Crie um programa principal para testar a classe. ***
-
+### Esta classe deve possuir métodos Privados para:
+- calcular a área do círculo;
+- calcular a distância entre os centros de 2 círculos;
+- calcular a circunferência do círculo.
+### E métodos Públicos para:
+- definir o raio do círculo, dado um número real;
+- aumentar o raio do círculo, dado um percentual de aumento;
+- definir o centro do círculo, dada uma posição (X,Y);
+- imprimir o valor do raio;
+- imprimir o centro do círculo.
+- imprimir a área do círculo.
+### Criar um programa principal para testar a classe.
+#
 # 6. Classe Televisão
 ### Implemente uma TV com:
 
@@ -125,14 +117,14 @@ Defina uma classe Circulo com:
 - Crie uma TV, troque de canal e ajuste o volume.
 
 - Exiba os valores finais.
-
+#
 # 7. Classe Condicionador de Ar
 ### Implemente um condicionador com:
 
 - 10 níveis de potência (cada unidade diminui 1.8°C).
 
 - Variação de temperatura: [0°C - 18°C].
-
+#
 # 8. Classe Carro
 ## Implemente um carro com:
 
@@ -153,7 +145,7 @@ Defina uma classe Circulo com:
 - Movimente (200 km e 400 km).
 
 - Exiba distância e combustível restante.
-
+#
 # 9. Classe Lista de Inteiros
 ## Defina uma classe que represente uma lista encadeada usando vetores.
 
@@ -176,7 +168,7 @@ Defina uma classe Circulo com:
 Lista: Inicio: 3  
 9(3), 10(0), 11(5), 1(1), 34(6)  
 ```
-
+#
 # 10. Classe Veículo (Composição)
 ## Implemente um veículo composto por:
 
