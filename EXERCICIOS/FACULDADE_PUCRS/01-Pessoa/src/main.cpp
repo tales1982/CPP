@@ -6,11 +6,11 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 09:35:59 by tales             #+#    #+#             */
-/*   Updated: 2025/04/08 10:01:02 by tales            ###   ########.fr       */
+/*   Updated: 2025/04/08 10:46:37 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libary/Pessoa.hpp"
+#include "../include/Pessoa.hpp"
 
 int main()
 {

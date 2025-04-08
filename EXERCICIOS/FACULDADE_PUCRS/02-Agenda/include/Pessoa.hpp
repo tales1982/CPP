@@ -6,7 +6,7 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 08:49:49 by tales             #+#    #+#             */
-/*   Updated: 2025/04/08 10:08:09 by tales            ###   ########.fr       */
+/*   Updated: 2025/04/08 12:14:11 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,5 @@ public:
 };
 
 std::ostream& operator<<(std::ostream& out, const Pessoa& b);
-
 
 #endif

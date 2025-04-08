@@ -6,7 +6,7 @@
 /*   By: tales <tales@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 08:49:42 by tales             #+#    #+#             */
-/*   Updated: 2025/04/08 10:46:46 by tales            ###   ########.fr       */
+/*   Updated: 2025/04/08 12:13:51 by tales            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,6 +72,9 @@
     };
 
     std::ostream& operator<<(std::ostream& out, const Pessoa& b) {
-        out << "Nome.: " << b.getNome() << "\nidade.: " << b.getIdade() << "\naltura.: " << b.getAltura();
+        out << "Nome: " << b.getNome()
+            << ", Idade: " << b.getIdade()
+            << ", Altura: " << b.getAltura();
         return out;
     }
+    
