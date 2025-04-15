@@ -146,28 +146,30 @@ Crie uma classe Relogio para armazenar horário (hora, minuto, segundo).
 
 - Exiba distância e combustível restante.
 #
-# 9. Classe Lista de Inteiros
-## Defina uma classe que represente uma lista encadeada usando vetores.
+# 9. Sistema de Notificações
+## Enunciado:
+- Crie uma classe base chamada Notificacao, que tem uma função virtual chamada enviar(). Essa função deverá ser sobrescrita em classes derivadas como Email, SMS e Push, que representam diferentes formas de notificação.
+## ✅ Requisitos:
+1. Crie uma classe base Notificacao com a função virtual enviar() const.
 
-###Atributos:
+2. Crie três classes derivadas:
 
-- Vetor Dados[TAM] (tamanho 10).
+- Email
 
-- Vetor Aux[TAM] (indica próximo elemento ou -1/-2).
+- SMS
 
-### Métodos:
+- Push
 
-- insereDado: Insere um inteiro (retorna 1 se sucesso, 0 se falha).
+3. Cada classe derivada deve sobrescrever a função enviar() com uma mensagem personalizada.
 
-- removeDado: Remove um valor (retorna 1 se sucesso, 0 se falha).
+4. No main(), crie um array (ou vetor) de ponteiros para Notificacao contendo instâncias de cada tipo, e chame enviar() para todas, demonstrando o polimorfismo.
 
-- imprimeLista: Exibe os dados na ordem de inserção.
-
-### Exemplo de impressão:
-```cpp
-Lista: Inicio: 3  
-9(3), 10(0), 11(5), 1(1), 34(6)  
+```basch
+Enviando notificação por E-MAIL: "Você tem um novo e-mail!"
+Enviando notificação por SMS: "Nova mensagem recebida!"
+Enviando notificação por PUSH: "Você recebeu uma notificação push!"
 ```
+
 #
 # 10. Classe Veículo (Composição)
 ## Implemente um veículo composto por:
