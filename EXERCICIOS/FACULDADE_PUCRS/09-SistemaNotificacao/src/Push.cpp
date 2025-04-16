@@ -1,28 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Email.hpp                                          :+:      :+:    :+:   */
+/*   Push.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlima-de <tlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 11:00:45 by tlima-de          #+#    #+#             */
-/*   Updated: 2025/04/16 13:27:27 by tlima-de         ###   ########.fr       */
+/*   Created: 2025/04/16 13:39:06 by tlima-de          #+#    #+#             */
+/*   Updated: 2025/04/16 13:56:14 by tlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EMAIL_HPP
-#define EMAIL_HPP
+#include "../include/Push.hpp"
 
-#include "Notificacao.hpp"
 
-class Email : public Notificacao
+void Push::enviar() const
 {
-private:
-   
-public:
-    void enviar() const;
-    ~Email();
+    std::cout << "Você recebeu uma notificação push!" << std::endl;
 };
 
-
-#endif
+Push::~Push(){};

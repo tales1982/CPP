@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Email.hpp                                          :+:      :+:    :+:   */
+/*   Sms.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tlima-de <tlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/15 11:00:45 by tlima-de          #+#    #+#             */
-/*   Updated: 2025/04/16 13:27:27 by tlima-de         ###   ########.fr       */
+/*   Created: 2025/04/16 13:22:23 by tlima-de          #+#    #+#             */
+/*   Updated: 2025/04/16 13:42:26 by tlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EMAIL_HPP
-#define EMAIL_HPP
+#include "../include/Sms.hpp"
 
-#include "Notificacao.hpp"
+void Sms::enviar() const{
+    std::cout << "Nova mensagem recebida!" << std::endl;
+}
 
-class Email : public Notificacao
-{
-private:
-   
-public:
-    void enviar() const;
-    ~Email();
-};
-
-
-#endif
+Sms::~Sms(){};

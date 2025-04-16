@@ -40,10 +40,9 @@ Lançar exceções se algo estiver errado.
 
 A classe Burocrata deve conter o método:
 
-cpp
-Copy
-Edit
+```cpp
 void executarFormulario(const FormularioBase &formulario);
+```
 📄 Formulários a implementar:
 1. 🛂 FormularioVisto
 Grau necessário para assinar: 120
@@ -52,10 +51,9 @@ Grau necessário para executar: 110
 
 Ação: imprime no terminal:
 
-php-template
-Copy
-Edit
+```php-template
 Visto concedido para <alvo> na colônia de Marte.
+```
 2. 👽 RegistroAlienigena
 Grau necessário para assinar: 90
 
@@ -63,10 +61,9 @@ Grau necessário para executar: 70
 
 Ação: cria um arquivo chamado <alvo>_registro.txt contendo:
 
-php-template
-Copy
-Edit
+```php-template
 Bem-vindo, <alvo>!
+```
 Você está agora registrado como um residente alienígena intergaláctico oficial.
 3. 🚀 TransportePlanetario
 Grau necessário para assinar: 50
@@ -75,10 +72,9 @@ Grau necessário para executar: 25
 
 Ação: imprime no terminal:
 
-php-template
-Copy
-Edit
+```php-template
 <alvo> foi transportado com sucesso para o planeta Vega-5!
+```
 🧪 Testes esperados
 No seu main.cpp, implemente testes que:
 
