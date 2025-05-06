@@ -1,0 +1,67 @@
+ Exercício: "DetectaTipo"
+🧠 Objetivo:
+Criar um programa que recebe vários valores como entrada (strings) e detecta o tipo de cada um, imprimindo uma descrição amigável do que foi identificado.
+
+✅ Conceitos que você vai treinar:
+Leitura e interpretação de std::string
+
+Conversão usando std::atoi, std::atof, etc.
+
+Verificação com isdigit, isprint, isnan, isinf
+
+Manipulação de saídas formatadas (std::setprecision, std::fixed)
+
+Controle de tipos (char, int, float, double)
+
+static_cast entre tipos
+
+Programação orientada a objetos (classe com funções auxiliares)
+
+🧩 Descrição do programa:
+O programa deve receber vários valores na linha de comando, e para cada valor, ele deve:
+
+Detectar o tipo (char, int, float, double ou inválido)
+
+Exibir a descrição do tipo detectado
+
+Mostrar a conversão para os outros tipos possíveis
+
+Exibir mensagens humanas (ex: "não exibível", "inválido", etc.)
+
+🖥️ Exemplo de execução:
+bash
+Copy
+Edit
+$ ./detectaTipo a 123 4.2 3.14f nan +infX
+
+Entrada: a
+Tipo detectado: char
+→ int: 97
+→ float: 97.0f
+→ double: 97.0
+
+Entrada: 123
+Tipo detectado: int
+→ char: '{'
+→ float: 123.0f
+→ double: 123.0
+
+Entrada: 4.2
+Tipo detectado: double
+→ char: não exibível
+→ int: 4
+→ float: 4.2f
+
+Entrada: 3.14f
+Tipo detectado: float
+→ char: não exibível
+→ int: 3
+→ double: 3.1
+
+Entrada: nan
+Tipo detectado: double especial (nan)
+→ int: impossível
+→ float: nanf
+
+Entrada: +infX
+Tipo detectado: inválido
