@@ -6,7 +6,7 @@
 /*   By: tlima-de <tlima-de@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 12:44:32 by tlima-de          #+#    #+#             */
-/*   Updated: 2025/05/06 13:45:49 by tlima-de         ###   ########.fr       */
+/*   Updated: 2025/05/07 13:18:43 by tlima-de         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void DetectaTipo::processar(const std::string &entrada)
 {
 
-    if (entrada.length() == 1 && std::isdigit(entrada[0]))
-    {
-        std::cout << "INTEIRO: " << entrada << std::endl;
-    }
-    else if (entrada.length() == 1 && std::isalpha(entrada[0]))
+    if (ehChar(entrada))
     {
         std::cout << "CHAR: '" << entrada << "'" << std::endl;
+    }
+    else if (entrada.length() == 1 && std::isdigit(entrada[0]))
+    {
+        std::cout << "INTEIRO: " << entrada << std::endl;
     }
     else
     {
@@ -31,8 +31,17 @@ void DetectaTipo::processar(const std::string &entrada)
 
 bool DetectaTipo::ehChar(const std::string &s)
 {
-    (void)s;
-    return false;
+    int len = s.length();
+    char c;
+    for (int i = 0; i < len; i++)
+    {
+        c = s[i];
+        if (static_cast<unsigned char>(c) < 32 || static_cast<unsigned char>(c) > 126)
+        {
+            return false; // Não é um caractere ASCII imprimível
+        }
+    }
+    return true; // Todos os caracteres são válidos
 }
 
 bool DetectaTipo::ehInt(const std::string &s)
