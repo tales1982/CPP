@@ -1,0 +1,43 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: tlima-de <tlima-de@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/05/14 12:00:00 by tlima-de          #+#    #+#              #
+#    Updated: 2025/05/14 11:54:54 by tlima-de         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Compiler and flags
+CXX     := c++
+CXXFLAGS:= -Wall -Wextra -Werror -std=c++98
+
+# Executable name
+NAME    := magic_bridge
+
+# Source files (ajustado — removido Citizen.cpp)
+SRCS    := main.cpp MagicBridge.cpp
+
+# Object files
+OBJS    := $(SRCS:.cpp=.o)
+
+# Default rule
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
